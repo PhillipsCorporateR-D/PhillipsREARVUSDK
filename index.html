@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+  <script>
+     const firebaseConfig = {
+      apiKey: "AIzaSyDmFt109KkN1iYlja0CaJPqa9pN7AE7JNc",
+      authDomain: "phillips-rearvu-sdk.firebaseapp.com",
+      projectId: "phillips-rearvu-sdk",
+      storageBucket: "phillips-rearvu-sdk.appspot.com",
+      messagingSenderId: "145808838206",
+      appId: "1:145808838206:web:b316c3c83a504671540b6f",
+      measurementId: "G-N5B3XTDZYD"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="phillips_rearvu_sdk_webpage">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>phillips_rearvu_sdk_webpage</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/build/pdf.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/build/pdf.worker.min.js";
+    pdfRenderOptions = {
+      cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/cmaps/',
+      cMapPacked: true,
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
