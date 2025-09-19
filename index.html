@@ -6,7 +6,21 @@
 
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
 
-  <base href="/PhillipsREARVUSDK/">
+  <script>
+     const firebaseConfig = {
+      apiKey: "AIzaSyDmFt109KkN1iYlja0CaJPqa9pN7AE7JNc",
+      authDomain: "phillips-rearvu-sdk.firebaseapp.com",
+      projectId: "phillips-rearvu-sdk",
+      storageBucket: "phillips-rearvu-sdk.appspot.com",
+      messagingSenderId: "145808838206",
+      appId: "1:145808838206:web:b316c3c83a504671540b6f",
+      measurementId: "G-N5B3XTDZYD"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -18,7 +32,10 @@
   <meta name="apple-mobile-web-app-title" content="phillips_rearvu_sdk_webpage">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>Phillips REAR VU</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>phillips_rearvu_sdk_webpage</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -28,11 +45,6 @@
     pdfRenderOptions = {
       cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/cmaps/',
       cMapPacked: true,
-    }
-  </script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/PhillipsREARVUSDK/flutter_service_worker.js');
     }
   </script>
   <script src="flutter_bootstrap.js" async></script>
