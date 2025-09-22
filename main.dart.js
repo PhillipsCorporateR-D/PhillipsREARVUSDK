@@ -24546,7 +24546,7 @@ return A.K(null,r)}})
 return A.L($async$aoQ,r)},
 WN(){var s=0,r=A.M(t.H),q
 var $async$WN=A.N(function(a,b){if(a===1)return A.J(b,r)
-while(true)switch(s){case 0:q=A.aIN().a4("assets/aar/rearvu-1.0.1.aar")
+while(true)switch(s){case 0:q=A.aIN().a4("aar/rearvu-1.0.1.aar")
 s=5
 return A.I(A.arY(q),$async$WN)
 case 5:s=b?2:4
